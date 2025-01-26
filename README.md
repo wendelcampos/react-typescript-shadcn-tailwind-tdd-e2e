@@ -4,13 +4,18 @@ Este é o repositório do projeto PizzaShop Web, uma aplicação web para gerenc
 
 ## Tecnologias Utilizadas
 
-- React
-- React
-- JavaScript
-- Tailwind CSS
-- shadcn
-- HTML
-- CSS
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Redux**: Biblioteca para gerenciamento de estado.
+- **Axios**: Cliente HTTP baseado em Promises.
+- **Tailwind CSS**: Framework de CSS utilitário para estilização rápida.
+- **Vitest**: Framework de testes unitários.
+- **Playwright**: Ferramenta para testes end-to-end.
+- **Node.js**: Ambiente de execução JavaScript server-side.
+- **Express**: Framework para Node.js.
+- **MongoDB**: Banco de dados NoSQL.
+- **Mongoose**: Biblioteca de modelagem de dados para MongoDB.
+- **ShadCN**: Componentes de UI para React.
+
 
 ## Funcionalidades
 
