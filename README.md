@@ -1,85 +1,257 @@
-# PizzaShop Web
+# 🍕 PizzaShop Web
 
-Este é o repositório do projeto PizzaShop Web, uma aplicação web para gerenciar pedidos de uma pizzaria.
+> **Sistema de Gerenciamento para Pizzarias** - Uma aplicação web moderna e completa para gerenciar pedidos, acompanhar métricas de negócio e administrar restaurantes de forma eficiente.
 
-## Tecnologias Utilizadas
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6.2-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.0.5-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.17-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![Testing](https://img.shields.io/badge/Testing-Vitest%20+%20Playwright-4CAF50?style=flat-square)](https://vitest.dev/)
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Redux**: Biblioteca para gerenciamento de estado.
-- **Axios**: Cliente HTTP baseado em Promises.
-- **Tailwind CSS**: Framework de CSS utilitário para estilização rápida.
-- **Vitest**: Framework de testes unitários.
-- **Playwright**: Ferramenta para testes end-to-end.
-- **Node.js**: Ambiente de execução JavaScript server-side.
-- **Express**: Framework para Node.js.
-- **MongoDB**: Banco de dados NoSQL.
-- **Mongoose**: Biblioteca de modelagem de dados para MongoDB.
-- **ShadCN**: Componentes de UI para React.
+## 📋 Índice
 
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Executando o Projeto](#executando-o-projeto)
+- [Testes](#testes)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-## Funcionalidades
+## 🎯 Sobre o Projeto
 
-- Visualização do menu de pizzas
-- Adição de pizzas ao carrinho de compras
-- Finalização de pedidos
-- Testes automatizados para garantir a qualidade do código
+O **PizzaShop Web** é uma aplicação de gerenciamento completa para pizzarias, desenvolvida com as mais modernas tecnologias web. O sistema oferece um dashboard abrangente com métricas de negócio, gerenciamento de pedidos em tempo real e uma interface intuitiva para administradores de restaurantes.
 
-## Cenário de Teste
+### 🎨 Interface Moderna
+- Design responsivo com **Tailwind CSS**
+- Componentes reutilizáveis com **ShadCN/UI**
+- Tema escuro/claro
+- Animações suaves e transições
 
-Para garantir que a aplicação funcione corretamente, foram implementados testes automatizados utilizando a biblioteca Vitest para testes unitários e Playwright para testes end-to-end (E2E).
+### ⚡ Performance
+- Construído com **Vite** para desenvolvimento rápido
+- **React Query** para cache inteligente de dados
+- Componentes otimizados com **React 18**
 
-### Executando os Testes
+## 🚀 Funcionalidades
 
-Para executar os testes, siga os passos abaixo:
+### 📊 Dashboard Administrativo
+- **Métricas Financeiras**: Receita mensal e diária
+- **Estatísticas de Pedidos**: Quantidade de pedidos e cancelamentos
+- **Gráficos Interativos**: Visualização de receita e produtos populares
+- **Cards de Performance**: Indicadores visuais de desempenho
 
-1. Certifique-se de que as dependências estão instaladas:
-    ```bash
-    npm install
-    ```
-2. Execute os testes:
-    ```bash
-    npm test
-    ```
+### 📦 Gerenciamento de Pedidos
+- **Listagem Completa**: Visualização de todos os pedidos
+- **Filtros Avançados**: Por ID, cliente, status
+- **Paginação**: Navegação eficiente entre páginas
+- **Status em Tempo Real**: Acompanhamento do ciclo de vida dos pedidos
+- **Detalhes Completos**: Informações detalhadas de cada pedido
 
-Os testes irão rodar e fornecer um relatório detalhado sobre o status de cada teste.
-- Visualização do status do pedido
+### 🔐 Autenticação e Perfil
+- **Login Seguro**: Autenticação com validação
+- **Perfil do Restaurante**: Gerenciamento de dados da empresa
+- **Menu de Conta**: Navegação intuitiva
 
-## Como Executar o Projeto
+### 🎭 Estados de Pedidos
+- **Pendente**: Aguardando aprovação
+- **Processando**: Em preparação
+- **A Caminho**: Saiu para entrega
+- **Entregue**: Finalizado
+- **Cancelado**: Pedido cancelado
 
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/pizzashop-web.git
-    ```
-2. Navegue até o diretório do projeto:
-    ```bash
-    cd pizzashop-web
-    ```
-3. Instale as dependências:
-    ```bash
-    npm install
-    ```
-4. Inicie a aplicação:
-    ```bash
-    npm start
-    ```
+## 🛠 Tecnologias
 
-## Contribuição
+### Frontend
+- **[React 18.3.1](https://reactjs.org/)** - Biblioteca para interfaces de usuário
+- **[TypeScript 5.6.2](https://www.typescriptlang.org/)** - Tipagem estática
+- **[Vite 6.0.5](https://vitejs.dev/)** - Build tool moderna
+- **[React Router DOM 7.4.0](https://reactrouter.com/)** - Roteamento
+- **[TanStack Query 5.64.1](https://tanstack.com/query)** - Gerenciamento de estado servidor
+- **[React Hook Form 7.54.2](https://react-hook-form.com/)** - Formulários
+- **[Zod 3.24.1](https://zod.dev/)** - Validação de esquemas
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature:
-    ```bash
-    git checkout -b minha-feature
-    ```
-3. Commit suas mudanças:
-    ```bash
-    git commit -m 'Minha nova feature'
-    ```
-4. Envie para o repositório remoto:
-    ```bash
-    git push origin minha-feature
-    ```
-5. Abra um Pull Request
+### Estilização
+- **[Tailwind CSS 3.4.17](https://tailwindcss.com/)** - Framework CSS utilitário
+- **[ShadCN/UI](https://ui.shadcn.com/)** - Componentes de interface
+- **[Radix UI](https://www.radix-ui.com/)** - Componentes primitivos acessíveis
+- **[Lucide React](https://lucide.dev/)** - Ícones
+- **[Recharts](https://recharts.org/)** - Gráficos e visualizações
 
-## Licença
+### Testes
+- **[Vitest 3.0.0](https://vitest.dev/)** - Framework de testes unitários
+- **[Playwright 1.50.0](https://playwright.dev/)** - Testes end-to-end
+- **[Testing Library](https://testing-library.com/)** - Utilitários de teste
+- **[MSW](https://mswjs.io/)** - Mock Service Worker
+
+### Desenvolvimento
+- **[ESLint](https://eslint.org/)** - Linting de código
+- **[Prettier](https://prettier.io/)** - Formatação de código
+- **[Auto Import](https://github.com/antfu/unplugin-auto-import)** - Importações automáticas
+
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **[Node.js](https://nodejs.org/)** (versão 18 ou superior)
+- **[npm](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**
+- **[Git](https://git-scm.com/)**
+
+## 🚀 Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/pizzashop-web.git
+   cd pizzashop-web
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Configure as variáveis de ambiente** (se necessário)
+   ```bash
+   cp .env.example .env.local
+   ```
+
+## ▶️ Executando o Projeto
+
+### Desenvolvimento
+```bash
+npm run dev
+# ou
+yarn dev
+```
+Acesse: `http://localhost:5173`
+
+### Build de Produção
+```bash
+npm run build
+# ou
+yarn build
+```
+
+### Preview da Build
+```bash
+npm run preview
+# ou
+yarn preview
+```
+
+### Linting
+```bash
+npm run lint
+# ou
+yarn lint
+```
+
+## 🧪 Testes
+
+### Testes Unitários (Vitest)
+```bash
+npm test
+# ou
+yarn test
+```
+
+### Testes E2E (Playwright)
+```bash
+npx playwright test
+```
+
+### Testes com UI do Playwright
+```bash
+npx playwright test --ui
+```
+
+### Executar testes em modo watch
+```bash
+npm run test -- --watch
+```
+
+## 📁 Estrutura do Projeto
+
+```
+pizzashop-web/
+├── 📁 public/                 # Arquivos estáticos
+├── 📁 src/
+│   ├── 📁 api/               # Chamadas para API e mocks
+│   │   ├── 📁 mocks/         # Mock Service Worker handlers
+│   │   └── *.ts              # Funções de API
+│   ├── 📁 components/        # Componentes reutilizáveis
+│   │   ├── 📁 ui/           # Componentes base do ShadCN
+│   │   └── *.tsx            # Componentes customizados
+│   ├── 📁 lib/              # Utilitários e configurações
+│   ├── 📁 pages/            # Páginas da aplicação
+│   │   ├── 📁 app/          # Páginas autenticadas
+│   │   │   ├── 📁 dashboard/ # Dashboard e métricas
+│   │   │   └── 📁 orders/   # Gerenciamento de pedidos
+│   │   ├── 📁 auth/         # Páginas de autenticação
+│   │   └── 📁 _layouts/     # Layouts das páginas
+│   ├── 📁 assets/           # Imagens e recursos
+│   ├── app.tsx              # Componente raiz
+│   ├── main.tsx             # Ponto de entrada
+│   └── router.tsx           # Configuração de rotas
+├── 📁 test/                 # Testes E2E
+├── 📁 test-results/         # Resultados dos testes
+├── 📁 playwright-report/    # Relatórios do Playwright
+├── package.json
+├── vite.config.ts
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
+
+### 🔑 Principais Diretórios
+
+- **`src/api/`**: Contém todas as chamadas para API e mocks para desenvolvimento
+- **`src/components/`**: Componentes reutilizáveis e UI base
+- **`src/pages/`**: Páginas da aplicação organizadas por contexto
+- **`src/lib/`**: Configurações do Axios, React Query e utilitários
+- **`test/`**: Testes end-to-end com Playwright
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas! Para contribuir:
+
+1. **Fork o projeto**
+2. **Crie uma branch para sua feature**
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+   ```
+3. **Commit suas mudanças**
+   ```bash
+   git commit -m 'feat: adiciona nova funcionalidade'
+   ```
+4. **Push para a branch**
+   ```bash
+   git push origin feature/nova-funcionalidade
+   ```
+5. **Abra um Pull Request**
+
+### 📝 Padrões de Commit
+Seguimos o padrão [Conventional Commits](https://www.conventionalcommits.org/):
+- `feat:` nova funcionalidade
+- `fix:` correção de bug
+- `docs:` documentação
+- `style:` formatação
+- `refactor:` refatoração
+- `test:` testes
+- `chore:` tarefas de manutenção
+
+## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+<div align="center">
+  <p>Desenvolvido com ❤️ para pizzarias modernas</p>
+  <p>⭐ Se este projeto te ajudou, considere dar uma estrela!</p>
+</div>
